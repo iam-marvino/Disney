@@ -1,0 +1,185 @@
+.detailPageContainer{
+    position: relative;
+    min-height:100vh;
+    overflow-x: hidden;
+    top:72px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    padding-left:5%;
+    opacity:5;
+    z-index:5;
+    margin-top:2.5%;
+}
+
+.detailPage{
+    background-size: cover;
+    overflow: hidden;
+    height:100vh;
+    background-repeat: no-repeat;
+    opacity:0.8;
+    z-index:-1; 
+}
+
+.imageTitle{
+    height:30px;
+    min-height: 170px;
+    width: 20%;
+    max-width: 200px;
+    max-height: 100px;
+
+}
+
+.imageTitle img{
+    max-width: 600px;
+    min-width: 200px;
+    width:35vh;
+}
+
+.movieContent{
+    max-width:840px;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin:24px 0px;
+    flex-flow:row nowrap;
+    min-height:56px;
+    gap:0.5rem;
+}
+
+.controls button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playButton{
+    font-size: 15px;
+    margin:0px 22px 0px 0px;
+    padding:0px 24px;
+    height: 56px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.8px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+.playButton img{
+    width: 32px;
+}
+
+.playButton:hover{
+    background-color:rgb(198, 198, 198) ;
+}
+
+
+.trailerButton{
+    font-size: 15px;
+    margin:0px 22px 0px 0px;
+    padding:0px 24px;
+    height: 56px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.8px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0,0.3);
+    border: 1px solid rgb(249, 249, 249);
+    color: rgb(249, 249, 249);
+}
+
+.trailerButton img{
+    width: 32px;
+}
+
+.trailerButton:hover{
+    
+}
+
+.addButton,.groupButton{
+    margin-right:10px;
+    height: 44px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0,0,0.6);
+    border-radius: 50%;
+    border:2px solid white;
+    cursor: pointer;
+    
+
+}
+
+.addButton img{
+    width: 60%;
+}
+
+.groupButton img{
+    height: 100%;
+    width:100%;
+}
+
+
+.movieInfo{
+    color: rgb(249, 249, 249);
+    font-size: 16px;
+    min-height: 20px;
+}
+
+.movieDescription{
+    line-height:1.3rem;
+    font-size:20px;
+    width:80%;
+    color: rgb(249, 249, 249);
+    margin-top: 1rem;
+    max-width:500px;
+}
+
+
+
+
+@media(max-width:768px){
+    .detailPage img{
+        width: initial;
+    }
+    .playButton,.trailerButton{
+        height:45px;
+        padding: 0px 12px;
+        font-size: 12px;
+        margin: 0px 10px 0px 0px;
+
+    }
+
+    .playButton img,.trailerButton img{
+         width:25px;
+
+    }
+    
+    .movieInfo{
+        font-size:12px;
+    }
+
+    .movieDescription{
+        font-size:14px;
+    }
+    
+    .detailPageContainer{
+        margin-top:20%;
+    }
+
+}
+

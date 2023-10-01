@@ -1,0 +1,417 @@
+
+
+.home{
+    background-image: url('../assets/images/home-background.png');
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 72px;
+    background-position: center;
+    height: auto;
+}
+
+.homeContainer{
+    position: relative;
+    margin-top:75px;
+    background-image: url('../assets/images/home-background.png');
+    min-height: 100vh;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:0 2%;
+}
+
+.homeContainer::after{
+    background-image: url('../assets/images/home-background.png');
+    background-position: center;
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    z-index:-1;
+    opacity:1;
+    inset:0px;
+}
+
+
+
+
+
+
+/* SLIDER */
+
+.Slider{
+    margin-top:90px;
+}
+
+.Slider .slick-prev:before{
+    opacity:0;
+    width:5vw;
+    z-index:1;
+}
+
+.Slider .slick-next:before{
+    opacity:0;
+    width:5vw;
+    z-index:1;
+}
+
+.Slider .slick-prev:before:hover{
+    opacity:1;
+}
+
+.Slider .slick-next:before:hover{
+    opacity:1;
+}
+
+.Slider ul li button::before{
+    font-size:10px;
+    color: rgb(150, 158, 171);
+}
+
+.Slider ul li button::before{
+    font-size:10px;
+    color: rgb(150, 158, 171);
+}
+
+
+.Slider .slick-dots li.slick-active button:before {
+    opacity: 2.75;
+    color: white;
+}
+
+.Slider .slick-list{
+    overflow: initial;
+}
+
+.Wrap{
+    border-radius:4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.Wrap a{
+    box-shadow: 4px;
+    box-shadow: rgb(177, 4, 4);
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding:4px;
+}
+
+.Wrap img{
+    width:100%;
+    height: 100%;
+    box-shadow: 0px 26px 30px -10px rgba(0, 0, 0, 0.69), 0px 16px 10px -10px rgba(0, 0, 0, 0.73);
+}
+
+.Wrap img:hover{
+   padding:0;
+   border-radius:4px;
+   border: 3px solid rgba(249, 249, 249,0.8);
+   transition-duration: 300ms;
+}
+
+
+
+
+
+
+
+
+/* VIEWERS */
+
+.viewers{
+    margin-top: 30px;
+}
+
+.viewersContainer{
+    padding:30px 0px 26px;
+    width:90%;
+    margin:0 auto;
+    display: grid;
+    gap:25px;
+    grid-template-columns: repeat(5, minmax(0,25%));
+}
+
+.viewersContainer div{
+    box-shadow: 0px 26px 30px -10px rgba(0, 0, 0, 0.69), 0px 16px 10px -10px rgba(0, 0, 0, 0.73);
+    border: 3px solid rgba(249,249,249, 0.1);
+    border-radius:10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+}
+
+.viewersContainer img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position: relative;
+    display: block;
+    transition:opacity 500ms ease ease-in-out 0s;
+}
+
+.viewersContainer video{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    opacity:0;
+    z-index:0;
+}
+
+.viewersContainer .viewersItem:hover video{
+    transform: scale(1.05);
+    border-color: rgba(249, 249, 249,0.8);
+    opacity:1;
+}
+
+
+
+
+
+/* Recommended for you */
+
+.recommended h4{
+    margin-left:5%;
+    padding-top:50px;
+}
+
+.recommendedContainer{
+    width:90%;
+    padding-top:30px;
+    margin:0 auto;
+    display: grid;
+    gap:25px;
+    grid-template-columns: repeat(4, minmax(0,25%));
+    
+}
+
+.recommendedContainer img{
+ 
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position: relative;
+    display: block;
+    transition:opacity 500ms ease ease-in-out 0s;
+}
+
+.recommendedContainer div{
+    box-shadow: 0px 26px 30px -10px rgba(0, 0, 0, 0.69), 0px 16px 10px -10px rgba(0, 0, 0, 0.73);
+    border-radius:10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid rgba(249,249,249, 0.1);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.recommendedContainer .recommendedItem:hover {
+    transform: scale(1.05);
+    border-color: rgba(249, 249, 249,0.8);
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+
+/* New To Disney */
+
+.new h4{
+    margin-left:5%;
+    padding-top:50px;
+}
+
+.newContainer{
+    width:90%;
+    padding-top:30px;
+    margin:0 auto;
+    display: grid;
+    gap:25px;
+    grid-template-columns: repeat(4, minmax(0,25%));
+}
+
+.newContainer img{
+ 
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position: relative;
+    display: block;
+    transition:opacity 500ms ease ease-in-out 0s;
+}
+
+.newContainer div{
+    box-shadow: 0px 26px 30px -10px rgba(0, 0, 0, 0.69), 0px 16px 10px -10px rgba(0, 0, 0, 0.73);
+    border-radius:10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid rgba(249,249,249, 0.1);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.newContainer .newItem:hover {
+    transform: scale(1.05);
+    border-color: rgba(249, 249, 249,0.8);
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+
+/* Originals */
+
+.originals h4{
+    margin-left:5%;
+    padding-top:50px;
+}
+
+.originalsContainer{
+    width:90%;
+    padding-top:30px;
+    margin:0 auto;
+    display: grid;
+    gap:25px;
+    grid-template-columns: repeat(4, minmax(0,25%));
+}
+
+.originalsContainer img{
+ 
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position: relative;
+    display: block;
+    transition:opacity 500ms ease ease-in-out 0s;
+}
+
+.originalsContainer div{
+    box-shadow: 0px 26px 30px -10px rgba(0, 0, 0, 0.69), 0px 16px 10px -10px rgba(0, 0, 0, 0.73);
+    border-radius:10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid rgba(249,249,249, 0.1);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.originalsContainer .originalsItem:hover {
+    transform: scale(1.05);
+    border-color: rgba(249, 249, 249,0.8);
+    opacity:1;
+}
+
+
+
+
+
+
+/* Trending  */
+
+.trending h4{
+    margin-left:5%;
+    padding-top:50px;
+}
+
+.trendingContainer{
+    width:90%;
+    padding-top:30px;
+    margin:0 auto;
+    display: grid;
+    gap:25px;
+    grid-template-columns: repeat(4, minmax(0,25%));
+    padding-bottom:50px;
+}
+
+.trendingContainer img{
+ 
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position: relative;
+    display: block;
+    transition:opacity 500ms ease ease-in-out 0s;
+}
+
+.trendingContainer div{
+    box-shadow: 0px 26px 30px -10px rgba(0, 0, 0, 0.69), 0px 16px 10px -10px rgba(0, 0, 0, 0.73);
+    border-radius:10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid rgba(249,249,249, 0.1);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.trendingContainer .trendingItem:hover {
+    transform: scale(1.05);
+    border-color: rgba(249, 249, 249,0.8);
+    opacity:1;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .Slider .Wrap,.Wrap img{
+    height: 200px; /* Adjust the height value for smaller screens */
+  }
+
+  .Slider{
+    height: 220px;
+  }
+
+}
+
+/* Adjust the height of slides to match the container height */
+.slick-slide {
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    .viewersContainer{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .recommendedContainer,.newContainer,.originalsContainer,.trendingContainer{
+        grid-template-columns: repeat(2, minmax(0,50%));
+    }
+
+}
